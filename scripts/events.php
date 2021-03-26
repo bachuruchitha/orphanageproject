@@ -15,8 +15,7 @@ if(isset($_POST['submit'])){
         move_uploaded_file($filetmp,$destination);
         $result="insert into event(eventName,image,details) values ('$eventName','$destination','$details')";
     } 
-    mysqli_query($conn,$result); 
-    
+    mysqli_query($conn,$result);
 }
 ?>
 <?php
